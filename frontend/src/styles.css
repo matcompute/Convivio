@@ -1,0 +1,333 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: #071427;
+  color: #f7efe7;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(50, 196, 196, 0.22), transparent 20rem),
+    radial-gradient(circle at bottom left, rgba(255, 126, 95, 0.24), transparent 24rem),
+    #071427;
+}
+
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+
+input, textarea, select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(7, 18, 32, 0.85);
+  color: #f7efe7;
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.65rem;
+}
+
+textarea { min-height: 6.5rem; resize: vertical; }
+
+label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  color: #d6d6de;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #f8ae72;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.primary-button, .secondary-button, .ghost-button, .nav-item, .pill {
+  border: 0;
+  border-radius: 0.7rem;
+  transition: 180ms ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #ff8f68, #f7b75f);
+  color: #1f1422;
+  font-weight: 700;
+  padding: 0.9rem 1.2rem;
+}
+
+.secondary-button {
+  background: rgba(78, 211, 201, 0.18);
+  color: #abf4ee;
+  padding: 0.8rem 1rem;
+}
+
+.ghost-button {
+  background: transparent;
+  color: #f2d8c3;
+  padding: 0.75rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.primary-button:hover, .secondary-button:hover, .ghost-button:hover, .nav-item:hover, .pill:hover {
+  transform: translateY(-1px);
+}
+
+.login-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(18rem, 1.2fr) minmax(20rem, 26rem);
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
+}
+
+.login-copy, .login-panel, .surface, .sidebar, .workspace-header, .hero-band {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(6, 16, 30, 0.72);
+  backdrop-filter: blur(20px);
+}
+
+.login-copy {
+  padding: clamp(1.8rem, 4vw, 3.6rem);
+  border-radius: 1.1rem;
+}
+
+.login-copy h1 {
+  font-size: clamp(3.4rem, 9vw, 7rem);
+  margin: 0.5rem 0 1rem;
+  line-height: 0.95;
+  font-weight: 300;
+}
+
+.login-copy p { max-width: 40rem; color: #d8d2c9; }
+
+.login-highlights { margin-top: 2rem; display: grid; gap: 0.9rem; }
+
+.login-highlights article {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.login-panel {
+  padding: 1.6rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel-header h2, .workspace-header h2, .surface-header h3, .hero-band h2 {
+  margin: 0.25rem 0 0;
+}
+
+.demo-credentials { padding-top: 0.6rem; color: #c6c2bf; font-size: 0.9rem; }
+.demo-credentials ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 17.5rem minmax(0, 1fr);
+}
+
+.sidebar {
+  padding: 1.35rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1.5rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.brand-lockup h1 { margin: 0.25rem 0 0; font-size: 2.15rem; }
+.brand-lockup p, .sidebar-footer span { color: #c7c0b9; }
+
+.nav-list { display: grid; gap: 0.55rem; }
+
+.nav-item {
+  text-align: left;
+  padding: 0.9rem 1rem;
+  background: transparent;
+  color: #eee1d3;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, rgba(255, 143, 104, 0.2), rgba(64, 208, 198, 0.16));
+  color: #fff4e8;
+}
+
+.sidebar-footer { display: grid; gap: 0.35rem; }
+
+.workspace {
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.workspace-header {
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.workspace-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.workspace-badges span {
+  padding: 0.45rem 0.7rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  color: #d5cabe;
+  font-size: 0.82rem;
+}
+
+.view-stack { display: grid; gap: 1rem; }
+.hero-band, .surface { border-radius: 1rem; padding: 1.15rem; }
+.hero-band { display: grid; gap: 0.8rem; }
+.hero-band p, .surface p, .library-item p, .timeline-item p, .draft-card p, .retention-plan p { color: #d8d0c7; }
+
+.metric-grid, .library-grid, .review-grid, .snapshot-grid { display: grid; gap: 0.9rem; }
+.metric-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.metric-panel {
+  border-radius: 0.9rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.035);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.metric-panel span, .library-item span, .draft-card span, .review-head span, .retention-plan span {
+  color: #f6b57c;
+}
+
+.metric-panel strong, .snapshot-grid strong { font-size: 1.5rem; }
+.metric-panel em { color: #88e5dc; font-style: normal; }
+
+.two-column-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.surface-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.surface-header span, .timeline-item small, .library-item small, .snapshot-grid span, .review-head small, .plan-steps small {
+  color: #adabb5;
+}
+
+.bullet-list { margin: 0; padding-left: 1.15rem; display: grid; gap: 0.7rem; }
+.snapshot-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.snapshot-grid article {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0.8rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.timeline { display: grid; gap: 0.8rem; }
+
+.timeline-item {
+  padding: 0.95rem 1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.timeline-item.tone-positive { border-left: 3px solid #53d7b7; }
+.timeline-item.tone-attention { border-left: 3px solid #ff9f6b; }
+
+.dense-surface { display: grid; gap: 0.95rem; }
+.channel-pills { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+
+.pill {
+  background: rgba(255, 255, 255, 0.05);
+  color: #eee2d6;
+  padding: 0.65rem 0.95rem;
+}
+
+.pill.active {
+  background: rgba(82, 218, 205, 0.2);
+  color: #c8fff8;
+}
+
+.campaign-output, .retention-plan { display: grid; gap: 1rem; }
+
+.campaign-summary, .response-preview {
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.draft-list, .plan-steps { display: grid; gap: 0.8rem; }
+
+.draft-card, .library-item, .review-card {
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.library-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.review-card { display: grid; gap: 0.75rem; }
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.full-span { grid-column: 1 / -1; }
+.channel-editor { display: grid; gap: 0.75rem; }
+.channel-row { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 0.75rem; }
+
+.error-banner {
+  margin: 0;
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 85, 85, 0.12);
+  color: #ffb1aa;
+  border: 1px solid rgba(255, 113, 113, 0.2);
+}
+
+.error-banner.inline { margin-bottom: 0.2rem; }
+.empty-state { color: #b5b2bc; }
+
+@media (max-width: 1100px) {
+  .app-shell, .two-column-band, .login-shell, .metric-grid, .library-grid, .review-grid, .profile-grid, .snapshot-grid, .channel-row {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar { border-radius: 0; }
+}
+
+@media (max-width: 720px) {
+  .workspace { padding: 0.9rem; }
+  .workspace-header, .surface, .hero-band, .login-copy, .login-panel { padding: 1rem; }
+  .workspace-header { align-items: start; flex-direction: column; }
+}
