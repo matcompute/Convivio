@@ -6,7 +6,7 @@ The name comes from the Italian word `convivio`, which suggests gathering, dinin
 
 ## Product Position
 
-Convivio is the first dedicated AI product in the portfolio:
+Convivio is positioned as an AI growth platform for hospitality teams that need brand-safe commercial execution:
 
 - strong Python + React full-stack story
 - applied LLM and agent orchestration direction
@@ -135,16 +135,16 @@ cd backend
 .\.venv\Scripts\python.exe -c "from app.api.schemas import CampaignBriefRequest; from app.services.agent_service import build_campaign_output; from app.store.demo_store import get_profile; brief = CampaignBriefRequest(title='Weekday revival', objective='Increase weekday bookings', audience='Local repeat guests', channel_mix=['Instagram'], offer='Chef pairing', timing='This week', notes='Keep it elegant.'); print(build_campaign_output(brief, get_profile())['strategist_summary'])"
 ```
 
-## Why It Helps The CV
+## Engineering Focus
 
-Convivio gives immediate portfolio value for AI roles because it demonstrates:
+Convivio is structured to demonstrate:
 
 - Python backend delivery for AI workflows
 - agent-oriented orchestration patterns
 - LLM-ready product design
 - prompt/output approval workflow design
 - frontend delivery for a polished AI workspace
-- clear business impact language instead of notebook-only experimentation
+- business-facing AI workflow design instead of notebook-only experimentation
 
 ## Roadmap
 

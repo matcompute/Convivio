@@ -6,11 +6,11 @@ Convivio is an AI go-to-market suite for restaurants and hospitality businesses 
 
 ## 2. Why This Product
 
-This is the right first AI portfolio product because it gives:
+This is a strong first AI product direction because it gives:
 
 - a direct bridge from full-stack engineering into applied AI engineering
 - a real multi-agent product story
-- business value that is easy to explain to recruiters and buyers
+- business value that is easy to explain to operators, founders, and buyers
 - strong relevance to restaurant, hospitality, and SMB growth workflows
 - a credible path toward sellable AI software
 
@@ -129,7 +129,7 @@ Convivio should feel premium, warm, and energetic.
 - stateful workspace shell
 - reusable metric and workflow panels
 
-## 10. Why Recruiters Will Like It
+## 10. Engineering Value
 
 - Python delivery instead of notebook-only work
 - agentic product design
@@ -145,4 +145,3 @@ Convivio should feel premium, warm, and energetic.
 - publishing connectors for social and messaging channels
 - approval analytics and output evaluation
 - multi-brand portfolio views
-
